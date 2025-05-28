@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestionnaire de serveurs Lunar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="addServerForm">
+    <label>Dossier :</label>
+    <select id="folderSelect">
+      <option value="" disabled selected>Choisir un dossier</option>
+      <option value="__new__">+ Nouveau dossier</option>
+    </select>
+    <input type="text" id="newFolderInput" placeholder="Nom du nouveau dossier" style="display: none;" />
+    <input type="text" id="name" placeholder="Nom du serveur" required />
+    <input type="text" id="address" placeholder="Adresse IP" required />
+    <button type="submit">Ajouter</button>
+  </form>
+
+  <hr />
+
+  <div id="foldersContainer"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
